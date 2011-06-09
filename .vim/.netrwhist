@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/home/yoann/workspace/karotz3/external/a-versioner'
+let g:netrw_dirhist_2='/home/yoann/workspace/karotz3/external/gnupg-1.4.10'
+let g:netrw_dirhist_3='/media/TELNET/appli_meteo'
+let g:netrw_dirhist_4='/home/yoann/workspace/karotz/src/applications/appli_rss/common'

@@ -1,0 +1,72 @@
+#######################################
+####          AIDE VIM             ####
+#######################################
+F1 : 
+F2 :
+F3 : Charge le CTree
+F4 : Aide (:q ou C^c pour quitter)
+F5 :
+F6 : Retour en arrière dans le tag stack
+F7 : Va à la declaration
+F8 : Va à la declaration (new window)
+F9 :
+F10 :
+F11 :
+
+#######################################
+####           WINDOWS             ####
+#######################################
+
+C^w + s : Divise l'écran verticalement
+C^w + v : Divise l'écran horizontalement
+C^w + c : Ferme la fenêtre courante
+C^w + x : Switch entre les fenêtres
+C^w + [N]< : Réduction horiz. de N
+C^w + [N]> : Augmentation horiz. de N
+C^w + [N]- : Réduction vert. de N
+C^w + [N]+ : Augmentation vert. de N
+
+
+#######################################
+####           EDITION             ####
+#######################################
+
+dd    : suppression de ligne
+yy    : copier une ligne
+[N]dd : suppresion de N lignes
+[N]yy : copie de N lignes
+
+=%    : indentation automatique
+        à faire sur des accolade
+
+gg=G  : indente tout le fichier
+
+
+#######################################
+####           FOLDING             ####
+#######################################
+
+zo : Open one fold.
+zO : Open all folds recursively.
+zc : Close one fold.
+zC : Close all folds recursively.
+zf%: Create one fold
+
+#######################################
+####           TAB             ####
+#######################################
+
+:tabedit : ouvre une page
+:tabnew  : ouvre une page vide
+
+
+#######################################
+####          NERDTree             ####
+#######################################
+
+TAB   : charge une preview du fichier
+ENTER : charge le fichier
+
+....
+
+todo
