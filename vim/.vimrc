@@ -92,4 +92,4 @@ set tabpagemax=99
 " Shortkey
 source ~/.vim/shortkeys.vimrc
 
-set tags+=/home/yoann/workspace/karotz/src/tags
+" set tags+=/home/yoann/workspace/karotz/src/tags
