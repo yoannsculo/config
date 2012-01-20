@@ -10,8 +10,9 @@ F6 : Retour en arrière dans le tag stack
 F7 : Va à la declaration
 F8 : Va à la declaration (new window)
 F9 :
-F10 :
-F11 :
+C^F10 : Enable/Disable highlighting
+C^F11 : Enable/Disable invisible characters
+C^F12 : Enable/Disable line number
 
 #######################################
 ####           WINDOWS             ####
