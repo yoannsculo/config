@@ -1,20 +1,34 @@
 set t_Co=256
 
-" Mode non compatible avec vi
-set nocompatible
+" ----------------------------------
+" MISC. SETTINGS
+" ----------------------------------
 
-" Détection du type de fichier
-filetype on
+set nocompatible				" Use Vim default and not vi
+autocmd! bufwritepost vimrc source ~/.vimrc	" When vimrc is edited, reload it
+set backspace=indent,eol,start			" Backspace
+set history=700					" History
+set nobackup					" Don't keep a backup file
 
-" Chargement des plugins en fonction du type
-filetype plugin on
 
-" Affiche le numéro des lignes
-set number
+filetype on					" filetype detection
+filetype plugin on				" plugin loading according filetype
 
-" Affiche la position du curseur
-set ruler
-" set mouse=a
+
+" ----------------------------------
+" VISUAL SETTINGS
+" ----------------------------------
+
+set number					" Display line number
+" TODO : fonction qui active désactive les numéros de lignes
+set ruler					" Display cursor position
+" set mouse=a					" Enable mouse
+set hlsearch					" Enable highlight search
+":set nohlsearch				" Disable highlight search
+
+:nmap <C-F10> :set hls!<CR>:set hls?<CR>
+:nmap <C-F12> :set number!<CR>:set nonumber?<CR>
+
 
 "Détection du type de fichier pour l'indentation
 if has("autocmd")
@@ -30,11 +44,7 @@ colorscheme mustang
 " Undo
 set undolevels=150
 
-" Historique
-set history=100
 
-" Backspace
-set backspace=indent,eol,start
 
 " Activation de la coloration syntaxique
 if has("syntax")
@@ -67,15 +77,15 @@ set preserveindent
 " indentation automatique
 "set autoindent
 " Largeur de l'autoindentation
-set shiftwidth=4
+set shiftwidth=8
 " Arrondit la valeur de l'indentation
 set shiftround
 " Largeur du caractère tab
-set tabstop=4
+set tabstop=8
 " Largeur de l'indentation de la touche tab
-set softtabstop=4
+set softtabstop=8
 " Remplace les tab par des expaces
-set expandtab
+" set expandtab
 
 
 " Open Edres Help
