@@ -26,10 +26,6 @@ set ruler					" Display cursor position
 set hlsearch					" Enable highlight search
 ":set nohlsearch				" Disable highlight search
 
-:nmap <C-F10> :set hls!<CR>:set hls?<CR>
-:nmap <C-F12> :set number!<CR>:set nonumber?<CR>
-
-
 "Détection du type de fichier pour l'indentation
 if has("autocmd")
   filetype indent on

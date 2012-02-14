@@ -2,9 +2,9 @@
 ####          AIDE VIM             ####
 #######################################
 F1 : 
-F2 :
-F3 : Charge le CTree
-F4 : Aide (:q ou C^c pour quitter)
+F2 : NERDTree Explorer
+F3 :
+F4 : Aide (:q ou C^w + c pour quitter)
 F5 :
 F6 : Retour en arrière dans le tag stack
 F7 : Va à la declaration
