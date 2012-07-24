@@ -9,10 +9,11 @@ F5 :
 F6 : Retour en arrière dans le tag stack
 F7 : Va à la declaration
 F8 : Va à la declaration (new window)
-F9 :
+F9 : Enable tab indent (Kernel)
 C^F10 : Enable/Disable highlighting
 C^F11 : Enable/Disable invisible characters
 C^F12 : Enable/Disable line number
+C^F9  : Enable space indent (Android)
 
 #######################################
 ####           WINDOWS             ####

@@ -14,6 +14,9 @@ map <F7> <C-]>
 " go to the declaration in a new window
 map <F8> <C-w>v<C-]>
 
+map <F9> :set expandtab!<CR>:set tabstop=8<CR>:set softtabstop=8<CR>:set shiftwidth=8<CR>
+map <C-F9> :set expandtab<CR>:set shiftwidth=4<CR>:set softtabstop=4<CR>
+
 " Enable/Disable highlight
 map <C-F10> :set hls!<CR>:set hls?<CR>
 
