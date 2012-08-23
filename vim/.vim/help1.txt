@@ -46,6 +46,10 @@ yy    : copier une ligne
 
 gg=G  : indente tout le fichier
 
+CTRL + A : increment number
+CTRL + X : decrement number
+ga : display hex, ascii of char
+gf : open file name under cursor
 
 #######################################
 ####           FOLDING             ####
