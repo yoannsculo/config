@@ -6,7 +6,7 @@ F2 : NERDTree Explorer
 F3 :
 F4 : Aide (:q ou C^w + c pour quitter)
 F5 :
-F6 : Retour en arrière dans le tag stack
+F5 : Retour en arrière dans le tag stack
 F7 : Va à la declaration
 F8 : Va à la declaration (new window)
 F9 : Enable tab indent (Kernel)
@@ -19,6 +19,10 @@ C^F9  : Enable space indent (Android)
 ####           WINDOWS             ####
 #######################################
 
+CTRL + arrows : navigation
+ALT + arrows : split
+CTRL + C : close
+
 C^w + s : Divise l'écran verticalement
 C^w + v : Divise l'écran horizontalement
 C^w + c : Ferme la fenêtre courante
@@ -27,7 +31,6 @@ C^w + [N]< : Réduction horiz. de N
 C^w + [N]> : Augmentation horiz. de N
 C^w + [N]- : Réduction vert. de N
 C^w + [N]+ : Augmentation vert. de N
-
 
 #######################################
 ####           EDITION             ####

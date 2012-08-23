@@ -35,7 +35,18 @@ map <C-d> a<C-R>=strftime("%c")<CR><Esc>
 " Backward research
 map µ #
 
-nmap <F5> zf%<ESC>:nohlsearch<CR>
+" nmap <F5> zf%<ESC>:nohlsearch<CR>
+
+map <A-Left> <ESC>:vsplit<CR>
+map <A-Right> <ESC>:vsplit<CR>
+map <A-Up> <ESC>:split<CR>
+map <A-Down> <ESC>:split<CR>
+map <C-c> <ESC>:close<CR>
+
+map <C-Left> <C-w><Left>
+map <C-Up> <C-w><Up>
+map <C-Down> <C-w><Down>
+map <C-Right> <C-w><Right>
 
 " map <F2> :call XRDisplayHelp("~/.vim/help1.txt")<CR>
 " imap <F2> <C-\><C-N>:call XRDisplayHelp("$HOME/.vim/help1.txt")<CR>
