@@ -1,0 +1,9 @@
+# Fichier généré automatiquement - utilisez « minicom -s »
+# pour changer les paramètres
+pu port             /dev/USB0
+pu baudrate         115200
+pu bits             8
+pu parity           N
+pu stopbits         1
+pu pname8           YUNYNloado
+pu pprog8           loado_linux

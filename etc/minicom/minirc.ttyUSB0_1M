@@ -1,0 +1,8 @@
+# Fichier généré automatiquement - utilisez « minicom -s »
+# pour changer les paramètres
+pu port             /dev/ttyUSB0
+pu baudrate         1000000
+pu rtscts           No 
+pu xonxoff          Yes
+pu pname8           YUNYNloado
+pu pprog8           loado_linux
