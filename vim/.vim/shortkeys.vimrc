@@ -5,6 +5,69 @@ map <F2> :NERDTree<CR>
 map <F4> <C-w>v:view ~/.vim/help1.txt<CR>:vertical res 43<CR>
 " map <F4> <C-w>v:e ~/.vimrc<CR>
 
+let g:pasteMode = 0
+function! TooglePasteMode()
+	if g:pasteMode == 0
+		let g:pasteMode = 1
+		set paste
+		:startinsert
+		echo "PASTE ON"
+	elseif g:pasteMode == 1
+		let g:pasteMode = 0
+		set nopaste
+		echo "PASTE OFF"
+	endif
+endfunction
+
+let g:lineNumberDisplay = 0
+function! ToogleLineNumberDisplay()
+	if g:lineNumberDisplay == 0
+		let g:lineNumberDisplay = 1
+		set number
+		echo "Line numbers ON"
+	elseif g:lineNumberDisplay == 1
+		let g:lineNumberDisplay = 0
+		set nonumber
+		echo "Line numbers OFF"
+	endif
+endfunction
+
+let g:indentationType = 0
+function! ToogleIndentationType()
+	if g:indentationType == 0
+		let g:indentationType = 1
+		set noexpandtab
+		set tabstop=8
+		set softtabstop=8
+		set shiftwidth=8
+		echo "Indentation set to TAB-8 (KERNEL)"
+	elseif g:indentationType == 1
+		let g:indentationType = 2
+		set expandtab
+		set tabstop=4
+		set shiftwidth=4
+		set softtabstop=4
+		echo "Indentation set to CHAR-4 (PYTHON)"
+	elseif g:indentationType == 2
+		let g:indentationType = 3
+		set expandtab
+		set tabstop=4
+		set shiftwidth=4
+		set softtabstop=4
+		echo "Indentation set to CHAR-4 (ANDROID-C/C++)"
+	elseif g:indentationType == 3
+		let g:indentationType = 0
+		set expandtab
+		set tabstop=3
+		set shiftwidth=3
+		set softtabstop=3
+		echo "Indentation set to CHAR-3 (BOOKEEN)"
+	endif
+endfunction
+
+" Enable/Disable paste mode
+map <F5> :call TooglePasteMode()<CR>
+
 " step back in the tag stack
 map <F6> <C-t>
 
@@ -14,17 +77,16 @@ map <F7> <C-]>
 " go to the declaration in a new window
 map <F8> <C-w>v<C-]>
 
-map <F9> :set expandtab!<CR>:set tabstop=8<CR>:set softtabstop=8<CR>:set shiftwidth=8<CR>
-map <C-F9> :set expandtab<CR>:set shiftwidth=4<CR>:set softtabstop=4<CR>
+" map <F9> :set expandtab!<CR>:set tabstop=8<CR>:set softtabstop=8<CR>:set shiftwidth=8<CR>
+" map <C-F9> :set expandtab<CR>:set shiftwidth=4<CR>:set softtabstop=4<CR>
+" map <C-F9> :set expandtab<CR>:set shiftwidth=3<CR>:set softtabstop=3<CR>
+map <C-F9> :call ToogleIndentationType()<CR>
 
 " Enable/Disable highlight
 map <C-F10> :set hls!<CR>:set hls?<CR>
 
-" Show/Hide invisible characters
-" <C-F11> : see cream-showinvisibles.vim
-
 " Show/Hide line numbers
-map <C-F12> :set number!<CR>:set nonumber?<CR>
+map <C-F12> :call ToogleLineNumberDisplay()<CR>
 
 " Mapping NERDTree command
 map <tab> go

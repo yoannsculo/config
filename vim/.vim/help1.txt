@@ -5,15 +5,14 @@ F1 :
 F2 : NERDTree Explorer
 F3 :
 F4 : Aide (:q ou C^w + c pour quitter)
-F5 :
-F5 : Retour en arrière dans le tag stack
+F5 : Enable/disable pasting mode.
 F7 : Va à la declaration
 F8 : Va à la declaration (new window)
 F9 : Enable tab indent (Kernel)
+C^F9  : Enable space indent (Android)
 C^F10 : Enable/Disable highlighting
 C^F11 : Enable/Disable invisible characters
 C^F12 : Enable/Disable line number
-C^F9  : Enable space indent (Android)
 
 #######################################
 ####           WINDOWS             ####
