@@ -54,7 +54,7 @@ function! ToogleIndentationType()
 		set tabstop=4
 		set shiftwidth=4
 		set softtabstop=4
-		echo "Indentation set to CHAR-4 (ANDROID-C/C++)"
+		echo "Indentation set to CHAR-4 (JAVA - ANDROID-C/C++)"
 	elseif g:indentationType == 3
 		let g:indentationType = 0
 		set expandtab
