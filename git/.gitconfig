@@ -18,3 +18,5 @@
 	
 	# Show files ignored by git
 	ign = ls-files -o -i --exclude-standard
+[init]
+	templatedir = ~/.git_template
