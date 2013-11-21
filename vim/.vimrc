@@ -36,6 +36,8 @@ set nowrap
 
 " Thème
 colorscheme mustang
+set guifont=Liberation\ Mono\ for\ Powerline\ 10
+let g:airline_powerline_fonts = 1
 
 " Undo
 set undolevels=150
