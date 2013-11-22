@@ -15,7 +15,8 @@
 	lg = log -p
 	lol = log --graph --decorate --pretty=oneline --abbrev-commit
 	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
-	
+	cm = commit -v
+
 	# Show files ignored by git
 	ign = ls-files -o -i --exclude-standard
 [init]
