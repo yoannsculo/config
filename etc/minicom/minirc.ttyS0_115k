@@ -1,0 +1,4 @@
+pu baudrate         115200
+pu port             /dev/ttyS1
+pu rtscts           No 
+pu xonxoff          No 
